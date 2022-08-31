@@ -1,17 +1,18 @@
-let player1Array = ['🤘', '✂️', '📃'];
-let player2Array = ['🤘', '✂️', '📃'];
+let playerArray = ['🤘', '✂️', '📃'];
+// let player2Array = ['🤘', '✂️', '📃'];
 const rock = '🤘';
 const paper = '📃';
 const scissors = '✂️';
 let temp;
+
 let player1;
 let player2;
 
-//player1 click
+//player1
 let button1 = document.getElementById('button1');
 let player1Display = document.querySelector('.player1-rock');
 
-//player2click
+//player2
 let button2 = document.getElementById('button2');
 let player2Display = document.querySelector('.player2-rock');
 
@@ -73,8 +74,15 @@ const clearWinner = () => {
   }, 2500);
 };
 
+const refreshPage = () => {
+  setTimeout(() => {
+    location.reload();
+  }, 2000);
+};
+
+//player1 button click
 button1.addEventListener('click', () => {
-  onClick1(player1Array);
+  onClick1(playerArray);
   player1Display.innerHTML = player1;
   player1Display.classList.remove('hide');
   console.log(player1, 'player1');
@@ -82,13 +90,13 @@ button1.addEventListener('click', () => {
   clearWinner();
 });
 
-//player2 click
-
+//player2 buttonclick
 button2.addEventListener('click', () => {
-  onClick2(player2Array);
+  onClick2(playerArray);
   player2Display.innerHTML = player2;
   player2Display.classList.remove('hide');
   console.log(player2, 'player2');
   declareWinner();
   clearWinner();
+  refreshPage();
 });
