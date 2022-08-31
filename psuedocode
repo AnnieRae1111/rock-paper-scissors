@@ -1,0 +1,26 @@
+Use emojis for rock paper scissor symbol 
+Have two arrays to shuffle on click of each button. 
+One array for player 1 with emoji symbols to shuffle on click 
+One array for computer player with emoji symbosl to shuffle on click 
+
+Two buttons: 
+1 for computer player 
+1 for player 1 aka person 
+
+Assign value to each symbol or make multiple if statements 
+
+if player 1 === rock && player 2 === scissors then player 1 wins
+if player 1 === rock && player 2  === paper then player 2 wins 
+if play 1 === rock and player 2 === rock then they tie and it starts over 
+
+if player 1 === scissors && player 2 ===  rock  then player 2 wins 
+if player 1 === scissors && player 2 === paper then player 1 wins 
+if player 1 === scissors && player 2 === scissors then it's a tie 
+
+if player 1 === paper && player 2 === rock then player 1 wins 
+if player 1 === paper && player 2 === scissors then player 2 wins 
+if player 1 === paper && player 2 === paper then its a tie 
+
+
+
+
