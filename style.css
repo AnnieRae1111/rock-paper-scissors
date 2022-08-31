@@ -7,29 +7,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 button {
   height: 90px;
   width: 120px;
   margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: aquamarine;
+  border: 1px solid black;
+  padding: 1 rem;
 }
 
 .player1-rock,
-.player1-scissors,
-.player1-paper,
-.player2-rock,
-.player2-scissors,
-.player2-paper {
-  height: 50px;
-  width: 50px;
-  font-size: 80px;
-  padding: 2rem;
-  display: none;
+.player2-rock {
+  font-size: 50px;
+  padding: 1rem;
 }
 
-.player1-wins,
-.player2-wins {
+.hide {
   display: none;
 }
