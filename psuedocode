@@ -21,6 +21,5 @@ if player 1 === paper && player 2 === rock then player 1 wins
 if player 1 === paper && player 2 === scissors then player 2 wins 
 if player 1 === paper && player 2 === paper then its a tie 
 
-
-
+Function for shuffling the emojis  
 
